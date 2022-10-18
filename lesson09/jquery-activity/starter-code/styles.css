@@ -1,0 +1,12 @@
+nav {
+  background-color: orange;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.album {
+  display: flex;
+  flex-flow: row wrap; 
+  align-items: baseline;
+  justify-content: space-around;
+}

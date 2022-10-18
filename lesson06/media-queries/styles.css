@@ -1,0 +1,59 @@
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 30%;
+  margin: 1.5%;
+  height: 200px;
+  background: black;
+}
+
+.left-section {
+  width: 80%;
+  background-color: red;
+}
+
+.right-section {
+  padding: 1rem;
+  width: 20%;
+  height: 900px;
+  background-color: blue;
+}
+
+.right-section .box {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+@media (max-width: 900px) {
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    display: none;
+    width: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin: 10px auto;
+  }
+}

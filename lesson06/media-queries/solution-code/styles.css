@@ -1,0 +1,34 @@
+.header-image {
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-image {
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header-image {
+        width: 500px;
+    }
+}
+
+@media print {
+    body img {
+        display: none;
+    }
+}
+
+@media (min-width: 500px), (max-width: 400px) {
+    p {
+        font-size: 50px;
+    }
+}
+
+p {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
